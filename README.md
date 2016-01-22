@@ -1,6 +1,8 @@
 # SlackReporter
 A simple iOS framework allowing beta-test users to provide feedback using Slack. Super easy to integrate. Super easy to use.
 
+[![Build Status](https://travis-ci.org/TheBasicMind/SlackReporter.svg?branch=master)](https://travis-ci.org/TheBasicMind/SlackReporter)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Version](https://img.shields.io/cocoapods/v/SlackReporter.svg?style=flat)](http://cocoapods.org/pods/SlackReporter)
 [![License](https://img.shields.io/cocoapods/l/SlackReporter.svg?style=flat)](http://cocoapods.org/pods/SlackReporter)
 [![Platform](https://img.shields.io/cocoapods/p/SlackReporter.svg?style=flat)](http://cocoapods.org/pods/SlackReporter)
