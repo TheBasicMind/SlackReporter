@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'SlackReporter_Example', :exclusive => true do
+  pod "SlackReporter", :path => "../"
+end
+
+target 'SlackReporter_Tests', :exclusive => true do
+  pod "SlackReporter", :path => "../"
+
+  
+end

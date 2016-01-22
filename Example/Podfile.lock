@@ -1,0 +1,14 @@
+PODS:
+  - SlackReporter (0.6.0)
+
+DEPENDENCIES:
+  - SlackReporter (from `../`)
+
+EXTERNAL SOURCES:
+  SlackReporter:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SlackReporter: 8e08c23603db3545b71660a6f9c321466e112285
+
+COCOAPODS: 0.39.0

@@ -1,0 +1,6 @@
+framework module SlackReporter {
+  umbrella header "SlackReporter-umbrella.h"
+
+  export *
+  module * { export * }
+}

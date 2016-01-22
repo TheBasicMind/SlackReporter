@@ -1,0 +1,827 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		080676E244783CA9CA6D16739F5A50D4 /* SRButtonWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DB4305672FD460C1EBE2236B181B1F /* SRButtonWidgets.swift */; };
+		0AD6D076472BBBC2F6AA8920FF07CBC6 /* Pods-SlackReporter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05C31A960C2A1D70ECB9B6F4D507505E /* Pods-SlackReporter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B40015F1295C1F6DF1BB2456043516B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		430A0D4E9D0E61DEE0A43329850B4558 /* SRForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425FC16FF4B15D61B19D5157E187B82F /* SRForm.swift */; };
+		51303F15B206FF1DF398280466962D0A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75147643B18E469D51A764FBC4229B95 /* Extensions.swift */; };
+		55F091BC6EA0F47061C757151DECA63B /* SRTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AC5B29C47F42766914D45BE179EB8E /* SRTableViewController.swift */; };
+		65E51FA762EF5324A4F6D220004833D2 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3851543486746BE3956273C03033B3EB /* Reachability.swift */; };
+		7FA328FC5FB2759C430E22564A0C4FCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		83249B9B6C1EA7CBECF8D178184CF2CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		952A05F2C06B45BBAF80B36D282EDEDC /* Pods-SlackReporter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD4B1C5A3372769744E5118FE085F15 /* Pods-SlackReporter_Example-dummy.m */; };
+		A59C70D99568C74AB91C36D98627CDC0 /* SlackFeedbackAttachement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CE020846201EA52C44AE0DCFB08EBA /* SlackFeedbackAttachement.swift */; };
+		A906B394E1E2D2F0127CF6347771B8E9 /* SRWebServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B88C18FCA22CF5B96B8D7A95023853 /* SRWebServiceClient.swift */; };
+		B081A79648CD5BC662F30BF433854950 /* SlackReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 62E4DF9B2707364DB3524D22ADF1F89D /* SlackReporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4E3FFCA9F8894885576A0FA39B44181 /* SlackReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9231F271E567F018D5932D0A73C8C /* SlackReporter.swift */; };
+		C326437EED6391A62F8FA8D27D309390 /* SlackReporter.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E7D2BA2BDF403F43957931FA6EF6DF7D /* SlackReporter.bundle */; };
+		CB6A12914428A53E5D84DB4DCC242A32 /* SlackCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A89AE073673F6EC699BE939C0ABDEB1 /* SlackCommand.swift */; };
+		D032F52B6789A3161914DF489257113E /* SlackReporter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1E6C7F9FA1D69AFD7B58BDBE2E5DF6 /* SlackReporter-dummy.m */; };
+		D1F8336A959CA787500A23EBD58797E0 /* Pods-SlackReporter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DB4E207F9A301A0FC8E572560C53B1 /* Pods-SlackReporter_Tests-dummy.m */; };
+		DBA44D62AB16D52920569DB412A8C8E6 /* SlackReporter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 78BD026AA467924FB4C4A34B103B161E /* SlackReporter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E006D3DB481EBDD83C7C49FEE310C488 /* SlackReporterStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96923C646FA0A4888C6DE3B3451F0E73 /* SlackReporterStyleKit.swift */; };
+		EB6AA01F45980B9DF84B5AA345481BFC /* Pods-SlackReporter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 63AF5085492DEFAD8AD5D7F9AE7B2BF9 /* Pods-SlackReporter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3AD0D443BA7D06E00F1F5E48ED7C8136 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10C29F79EED0FE74CFBF576FE1848801;
+			remoteInfo = SlackReporter;
+		};
+		9FD0BBCEFD08C4D3F3D1193284A02424 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10C29F79EED0FE74CFBF576FE1848801;
+			remoteInfo = SlackReporter;
+		};
+		F873BA87EF227F301D90501F319BDD26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BA341046C8EDB1B39B4FCBA43E31131;
+			remoteInfo = "SlackReporter-SlackReporter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05C31A960C2A1D70ECB9B6F4D507505E /* Pods-SlackReporter_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SlackReporter_Example-umbrella.h"; sourceTree = "<group>"; };
+		0ACE42DA85453FAA89FC35B781B0C8B5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16DD8821482D8617E5DA09C4F08EC575 /* Pods_SlackReporter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlackReporter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17BF2EC649D314BDCB4DAFBCA6946EDC /* SlackReporter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SlackReporter.xcconfig; sourceTree = "<group>"; };
+		19B88C18FCA22CF5B96B8D7A95023853 /* SRWebServiceClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SRWebServiceClient.swift; sourceTree = "<group>"; };
+		1E6D03CDEDD6694A755CCDC7D8BF03BE /* Pods-SlackReporter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SlackReporter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2B43D966390A2D31F3A745D30C4BC74A /* Pods-SlackReporter_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SlackReporter_Example-resources.sh"; sourceTree = "<group>"; };
+		2D73FBA610C15FD99300A5A503326C21 /* Pods-SlackReporter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SlackReporter_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		37652D6309DFE05778AD9ED583B3A198 /* Pods-SlackReporter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SlackReporter_Tests.modulemap"; sourceTree = "<group>"; };
+		3851543486746BE3956273C03033B3EB /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		425FC16FF4B15D61B19D5157E187B82F /* SRForm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SRForm.swift; sourceTree = "<group>"; };
+		511D8F6AD4BD10934F8E18DB255BFDDC /* Pods-SlackReporter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SlackReporter_Example.modulemap"; sourceTree = "<group>"; };
+		5A926B0779D0D24B10F192C2409060B7 /* Pods-SlackReporter_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SlackReporter_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		62E4DF9B2707364DB3524D22ADF1F89D /* SlackReporter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SlackReporter.h; sourceTree = "<group>"; };
+		63AF5085492DEFAD8AD5D7F9AE7B2BF9 /* Pods-SlackReporter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SlackReporter_Tests-umbrella.h"; sourceTree = "<group>"; };
+		68A933C9A65C5FADE5DB76B50823CAF2 /* Pods-SlackReporter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SlackReporter_Example.release.xcconfig"; sourceTree = "<group>"; };
+		693DFE474597D17DAF9604842E6B6982 /* Pods-SlackReporter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SlackReporter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		7298CC55959A825071CBDA4556F21EAD /* SlackReporter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlackReporter-prefix.pch"; sourceTree = "<group>"; };
+		73099DF51F017DCD2DA29C32322C7B81 /* Pods-SlackReporter_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SlackReporter_Tests-resources.sh"; sourceTree = "<group>"; };
+		75147643B18E469D51A764FBC4229B95 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		78BD026AA467924FB4C4A34B103B161E /* SlackReporter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlackReporter-umbrella.h"; sourceTree = "<group>"; };
+		7AD4B1C5A3372769744E5118FE085F15 /* Pods-SlackReporter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SlackReporter_Example-dummy.m"; sourceTree = "<group>"; };
+		8562343A41DDD74AA081FCE44EEAE298 /* Pods-SlackReporter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SlackReporter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8838E1B181FCB7FA348E78E2E89B6CB2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FB8AF7939E77B3F6FE77204A9D398A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92CE020846201EA52C44AE0DCFB08EBA /* SlackFeedbackAttachement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SlackFeedbackAttachement.swift; sourceTree = "<group>"; };
+		93AC5B29C47F42766914D45BE179EB8E /* SRTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SRTableViewController.swift; sourceTree = "<group>"; };
+		96923C646FA0A4888C6DE3B3451F0E73 /* SlackReporterStyleKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SlackReporterStyleKit.swift; sourceTree = "<group>"; };
+		9A89AE073673F6EC699BE939C0ABDEB1 /* SlackCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SlackCommand.swift; sourceTree = "<group>"; };
+		A9C9231F271E567F018D5932D0A73C8C /* SlackReporter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SlackReporter.swift; sourceTree = "<group>"; };
+		A9D1388AE89F6BADF161B6C8B5FE4F58 /* SlackReporter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SlackReporter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA1E6C7F9FA1D69AFD7B58BDBE2E5DF6 /* SlackReporter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SlackReporter-dummy.m"; sourceTree = "<group>"; };
+		B090FD96EDD2281443D2C9F303F5C8CD /* Pods-SlackReporter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SlackReporter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B1DB4305672FD460C1EBE2236B181B1F /* SRButtonWidgets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SRButtonWidgets.swift; sourceTree = "<group>"; };
+		B4DB4E207F9A301A0FC8E572560C53B1 /* Pods-SlackReporter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SlackReporter_Tests-dummy.m"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BFAA46B79A022054BD1E4ACB4867E50A /* SlackReporter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SlackReporter.modulemap; sourceTree = "<group>"; };
+		D49A7FF25B4E345BF3B9F2BEA240E1F6 /* Pods-SlackReporter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SlackReporter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D5DA0AB95A055058F0D2D3D7AC2A214A /* Pods_SlackReporter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlackReporter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7D2BA2BDF403F43957931FA6EF6DF7D /* SlackReporter.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlackReporter.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7F2755B514D08814742DEA36095EAFD /* Pods-SlackReporter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SlackReporter_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		EAB6602442DD99B4BC8F42AED159666C /* Pods-SlackReporter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SlackReporter_Example-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		718776D8176F9788E500FC12C4DF4B2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83249B9B6C1EA7CBECF8D178184CF2CE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6D264204089C81BBE86B6388D87E5D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FA328FC5FB2759C430E22564A0C4FCB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B10079D822AD61B5B0C7B6D91A1BE015 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B40015F1295C1F6DF1BB2456043516B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED2074278A5ED1AFF52D5EFA5D6C71D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AAFDD58FAE165211220BE6589D6C540 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				75147643B18E469D51A764FBC4229B95 /* Extensions.swift */,
+				3851543486746BE3956273C03033B3EB /* Reachability.swift */,
+				9A89AE073673F6EC699BE939C0ABDEB1 /* SlackCommand.swift */,
+				92CE020846201EA52C44AE0DCFB08EBA /* SlackFeedbackAttachement.swift */,
+				62E4DF9B2707364DB3524D22ADF1F89D /* SlackReporter.h */,
+				A9C9231F271E567F018D5932D0A73C8C /* SlackReporter.swift */,
+				96923C646FA0A4888C6DE3B3451F0E73 /* SlackReporterStyleKit.swift */,
+				B1DB4305672FD460C1EBE2236B181B1F /* SRButtonWidgets.swift */,
+				425FC16FF4B15D61B19D5157E187B82F /* SRForm.swift */,
+				93AC5B29C47F42766914D45BE179EB8E /* SRTableViewController.swift */,
+				19B88C18FCA22CF5B96B8D7A95023853 /* SRWebServiceClient.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		43F9B8A63AEBCFA38DF57A05F77C2DE6 /* Pods-SlackReporter_Example */ = {
+			isa = PBXGroup;
+			children = (
+				8838E1B181FCB7FA348E78E2E89B6CB2 /* Info.plist */,
+				511D8F6AD4BD10934F8E18DB255BFDDC /* Pods-SlackReporter_Example.modulemap */,
+				1E6D03CDEDD6694A755CCDC7D8BF03BE /* Pods-SlackReporter_Example-acknowledgements.markdown */,
+				693DFE474597D17DAF9604842E6B6982 /* Pods-SlackReporter_Example-acknowledgements.plist */,
+				7AD4B1C5A3372769744E5118FE085F15 /* Pods-SlackReporter_Example-dummy.m */,
+				EAB6602442DD99B4BC8F42AED159666C /* Pods-SlackReporter_Example-frameworks.sh */,
+				2B43D966390A2D31F3A745D30C4BC74A /* Pods-SlackReporter_Example-resources.sh */,
+				05C31A960C2A1D70ECB9B6F4D507505E /* Pods-SlackReporter_Example-umbrella.h */,
+				E7F2755B514D08814742DEA36095EAFD /* Pods-SlackReporter_Example.debug.xcconfig */,
+				68A933C9A65C5FADE5DB76B50823CAF2 /* Pods-SlackReporter_Example.release.xcconfig */,
+			);
+			name = "Pods-SlackReporter_Example";
+			path = "Target Support Files/Pods-SlackReporter_Example";
+			sourceTree = "<group>";
+		};
+		78225027A19C461D2B068D83920625F2 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDAFE88F71F1D947E29C794B4873F266 /* SlackReporter */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		79CE0525F9FA28C73A3357D13E95A12E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16DD8821482D8617E5DA09C4F08EC575 /* Pods_SlackReporter_Example.framework */,
+				D5DA0AB95A055058F0D2D3D7AC2A214A /* Pods_SlackReporter_Tests.framework */,
+				E7D2BA2BDF403F43957931FA6EF6DF7D /* SlackReporter.bundle */,
+				A9D1388AE89F6BADF161B6C8B5FE4F58 /* SlackReporter.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				78225027A19C461D2B068D83920625F2 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				79CE0525F9FA28C73A3357D13E95A12E /* Products */,
+				DA2F135FAD2CCFDF95A8F7AA441D11E9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		994397E5E01A36CA923F9EF4F3131455 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				3AAFDD58FAE165211220BE6589D6C540 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC74B53D54D4CB90A56E8A45306CE474 /* Pods-SlackReporter_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8FB8AF7939E77B3F6FE77204A9D398A6 /* Info.plist */,
+				37652D6309DFE05778AD9ED583B3A198 /* Pods-SlackReporter_Tests.modulemap */,
+				B090FD96EDD2281443D2C9F303F5C8CD /* Pods-SlackReporter_Tests-acknowledgements.markdown */,
+				D49A7FF25B4E345BF3B9F2BEA240E1F6 /* Pods-SlackReporter_Tests-acknowledgements.plist */,
+				B4DB4E207F9A301A0FC8E572560C53B1 /* Pods-SlackReporter_Tests-dummy.m */,
+				5A926B0779D0D24B10F192C2409060B7 /* Pods-SlackReporter_Tests-frameworks.sh */,
+				73099DF51F017DCD2DA29C32322C7B81 /* Pods-SlackReporter_Tests-resources.sh */,
+				63AF5085492DEFAD8AD5D7F9AE7B2BF9 /* Pods-SlackReporter_Tests-umbrella.h */,
+				8562343A41DDD74AA081FCE44EEAE298 /* Pods-SlackReporter_Tests.debug.xcconfig */,
+				2D73FBA610C15FD99300A5A503326C21 /* Pods-SlackReporter_Tests.release.xcconfig */,
+			);
+			name = "Pods-SlackReporter_Tests";
+			path = "Target Support Files/Pods-SlackReporter_Tests";
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DA2F135FAD2CCFDF95A8F7AA441D11E9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				43F9B8A63AEBCFA38DF57A05F77C2DE6 /* Pods-SlackReporter_Example */,
+				BC74B53D54D4CB90A56E8A45306CE474 /* Pods-SlackReporter_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DDAFE88F71F1D947E29C794B4873F266 /* SlackReporter */ = {
+			isa = PBXGroup;
+			children = (
+				994397E5E01A36CA923F9EF4F3131455 /* Pod */,
+				E449C825D14F4391EEFE3D32AC4F6157 /* Support Files */,
+			);
+			name = SlackReporter;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E449C825D14F4391EEFE3D32AC4F6157 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0ACE42DA85453FAA89FC35B781B0C8B5 /* Info.plist */,
+				BFAA46B79A022054BD1E4ACB4867E50A /* SlackReporter.modulemap */,
+				17BF2EC649D314BDCB4DAFBCA6946EDC /* SlackReporter.xcconfig */,
+				AA1E6C7F9FA1D69AFD7B58BDBE2E5DF6 /* SlackReporter-dummy.m */,
+				7298CC55959A825071CBDA4556F21EAD /* SlackReporter-prefix.pch */,
+				78BD026AA467924FB4C4A34B103B161E /* SlackReporter-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SlackReporter";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1FF503D919AE7F6920F0311D08052C90 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AD6D076472BBBC2F6AA8920FF07CBC6 /* Pods-SlackReporter_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F1B082F7A3C29E7F8B20E142CFBDCD4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6AA01F45980B9DF84B5AA345481BFC /* Pods-SlackReporter_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF4866F5844774819D68097B09AEFA7B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA44D62AB16D52920569DB412A8C8E6 /* SlackReporter-umbrella.h in Headers */,
+				B081A79648CD5BC662F30BF433854950 /* SlackReporter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		10C29F79EED0FE74CFBF576FE1848801 /* SlackReporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 588B8D2785C7EF33C8B242543E9377D8 /* Build configuration list for PBXNativeTarget "SlackReporter" */;
+			buildPhases = (
+				212AAF8A35531493D1DC650C7BF52AC6 /* Sources */,
+				A6D264204089C81BBE86B6388D87E5D4 /* Frameworks */,
+				03F74E14FFAB4067C41E43699236EE9D /* Resources */,
+				EF4866F5844774819D68097B09AEFA7B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2882A074F86EFF35739746CC1504B0D /* PBXTargetDependency */,
+			);
+			name = SlackReporter;
+			productName = SlackReporter;
+			productReference = A9D1388AE89F6BADF161B6C8B5FE4F58 /* SlackReporter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		408110F1FB0E5E94E7353F4A50B601F0 /* Pods-SlackReporter_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D53888CFD45995764982B2A8FC768A93 /* Build configuration list for PBXNativeTarget "Pods-SlackReporter_Tests" */;
+			buildPhases = (
+				FFD192FA30FE588210895A02D30BA636 /* Sources */,
+				718776D8176F9788E500FC12C4DF4B2E /* Frameworks */,
+				2F1B082F7A3C29E7F8B20E142CFBDCD4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6F58CA7BB5E9224044F8F7D3D884802 /* PBXTargetDependency */,
+			);
+			name = "Pods-SlackReporter_Tests";
+			productName = "Pods-SlackReporter_Tests";
+			productReference = D5DA0AB95A055058F0D2D3D7AC2A214A /* Pods_SlackReporter_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4BA341046C8EDB1B39B4FCBA43E31131 /* SlackReporter-SlackReporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 750226E976FD6BE71B516AD67B2F32DE /* Build configuration list for PBXNativeTarget "SlackReporter-SlackReporter" */;
+			buildPhases = (
+				263C9AA2D24770B5EFC5A9045B698D4C /* Sources */,
+				ED2074278A5ED1AFF52D5EFA5D6C71D9 /* Frameworks */,
+				64A4E52BC7DD2C3AB03175488BE5F0E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SlackReporter-SlackReporter";
+			productName = "SlackReporter-SlackReporter";
+			productReference = E7D2BA2BDF403F43957931FA6EF6DF7D /* SlackReporter.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		5D81DFB9C651BDDAC2A9EAFE46F0CCE6 /* Pods-SlackReporter_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3CD4C00DACA7F1456DC780061483758 /* Build configuration list for PBXNativeTarget "Pods-SlackReporter_Example" */;
+			buildPhases = (
+				68B50F6881DE04603D0D9617CC04A068 /* Sources */,
+				B10079D822AD61B5B0C7B6D91A1BE015 /* Frameworks */,
+				1FF503D919AE7F6920F0311D08052C90 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21192E19E1D0A3463E6D84B60D219CDF /* PBXTargetDependency */,
+			);
+			name = "Pods-SlackReporter_Example";
+			productName = "Pods-SlackReporter_Example";
+			productReference = 16DD8821482D8617E5DA09C4F08EC575 /* Pods_SlackReporter_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0720;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 79CE0525F9FA28C73A3357D13E95A12E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D81DFB9C651BDDAC2A9EAFE46F0CCE6 /* Pods-SlackReporter_Example */,
+				408110F1FB0E5E94E7353F4A50B601F0 /* Pods-SlackReporter_Tests */,
+				10C29F79EED0FE74CFBF576FE1848801 /* SlackReporter */,
+				4BA341046C8EDB1B39B4FCBA43E31131 /* SlackReporter-SlackReporter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03F74E14FFAB4067C41E43699236EE9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C326437EED6391A62F8FA8D27D309390 /* SlackReporter.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64A4E52BC7DD2C3AB03175488BE5F0E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		212AAF8A35531493D1DC650C7BF52AC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51303F15B206FF1DF398280466962D0A /* Extensions.swift in Sources */,
+				65E51FA762EF5324A4F6D220004833D2 /* Reachability.swift in Sources */,
+				CB6A12914428A53E5D84DB4DCC242A32 /* SlackCommand.swift in Sources */,
+				A59C70D99568C74AB91C36D98627CDC0 /* SlackFeedbackAttachement.swift in Sources */,
+				D032F52B6789A3161914DF489257113E /* SlackReporter-dummy.m in Sources */,
+				B4E3FFCA9F8894885576A0FA39B44181 /* SlackReporter.swift in Sources */,
+				E006D3DB481EBDD83C7C49FEE310C488 /* SlackReporterStyleKit.swift in Sources */,
+				080676E244783CA9CA6D16739F5A50D4 /* SRButtonWidgets.swift in Sources */,
+				430A0D4E9D0E61DEE0A43329850B4558 /* SRForm.swift in Sources */,
+				55F091BC6EA0F47061C757151DECA63B /* SRTableViewController.swift in Sources */,
+				A906B394E1E2D2F0127CF6347771B8E9 /* SRWebServiceClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		263C9AA2D24770B5EFC5A9045B698D4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68B50F6881DE04603D0D9617CC04A068 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				952A05F2C06B45BBAF80B36D282EDEDC /* Pods-SlackReporter_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD192FA30FE588210895A02D30BA636 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1F8336A959CA787500A23EBD58797E0 /* Pods-SlackReporter_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21192E19E1D0A3463E6D84B60D219CDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SlackReporter;
+			target = 10C29F79EED0FE74CFBF576FE1848801 /* SlackReporter */;
+			targetProxy = 9FD0BBCEFD08C4D3F3D1193284A02424 /* PBXContainerItemProxy */;
+		};
+		A2882A074F86EFF35739746CC1504B0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SlackReporter-SlackReporter";
+			target = 4BA341046C8EDB1B39B4FCBA43E31131 /* SlackReporter-SlackReporter */;
+			targetProxy = F873BA87EF227F301D90501F319BDD26 /* PBXContainerItemProxy */;
+		};
+		C6F58CA7BB5E9224044F8F7D3D884802 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SlackReporter;
+			target = 10C29F79EED0FE74CFBF576FE1848801 /* SlackReporter */;
+			targetProxy = 3AD0D443BA7D06E00F1F5E48ED7C8136 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		139A74576D125D52DA1883A659BD3E41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17BF2EC649D314BDCB4DAFBCA6946EDC /* SlackReporter.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SlackReporter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		1D44A893E4AD550986310BDA991636AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68A933C9A65C5FADE5DB76B50823CAF2 /* Pods-SlackReporter_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SlackReporter_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SlackReporter_Example/Pods-SlackReporter_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SlackReporter_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		490490EE3DC18C8116B11F434A058CDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D73FBA610C15FD99300A5A503326C21 /* Pods-SlackReporter_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SlackReporter_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SlackReporter_Tests/Pods-SlackReporter_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SlackReporter_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		810C30DC0C11EEB2F43984948D517486 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17BF2EC649D314BDCB4DAFBCA6946EDC /* SlackReporter.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SlackReporter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		832C73A2DF2C9B1D14557EB796CA0A9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17BF2EC649D314BDCB4DAFBCA6946EDC /* SlackReporter.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SlackReporter/SlackReporter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SlackReporter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SlackReporter/SlackReporter.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = SlackReporter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9278BB09CF0589E831A2CF613C2755F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17BF2EC649D314BDCB4DAFBCA6946EDC /* SlackReporter.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SlackReporter/SlackReporter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SlackReporter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SlackReporter/SlackReporter.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = SlackReporter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9D91318CF94E4135034620ED0C7F5F43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8562343A41DDD74AA081FCE44EEAE298 /* Pods-SlackReporter_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SlackReporter_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SlackReporter_Tests/Pods-SlackReporter_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SlackReporter_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E445C1301639A47CE43A01B9B1D505DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7F2755B514D08814742DEA36095EAFD /* Pods-SlackReporter_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SlackReporter_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SlackReporter_Example/Pods-SlackReporter_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SlackReporter_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		588B8D2785C7EF33C8B242543E9377D8 /* Build configuration list for PBXNativeTarget "SlackReporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				832C73A2DF2C9B1D14557EB796CA0A9A /* Debug */,
+				9278BB09CF0589E831A2CF613C2755F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		750226E976FD6BE71B516AD67B2F32DE /* Build configuration list for PBXNativeTarget "SlackReporter-SlackReporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				139A74576D125D52DA1883A659BD3E41 /* Debug */,
+				810C30DC0C11EEB2F43984948D517486 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3CD4C00DACA7F1456DC780061483758 /* Build configuration list for PBXNativeTarget "Pods-SlackReporter_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E445C1301639A47CE43A01B9B1D505DF /* Debug */,
+				1D44A893E4AD550986310BDA991636AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D53888CFD45995764982B2A8FC768A93 /* Build configuration list for PBXNativeTarget "Pods-SlackReporter_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D91318CF94E4135034620ED0C7F5F43 /* Debug */,
+				490490EE3DC18C8116B11F434A058CDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
