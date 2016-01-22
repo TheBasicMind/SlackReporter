@@ -171,3 +171,4 @@ Objective-C
 - While we will try not to change things uneccessarily, until version 1.0 is released there is no guarantee the SlackReporter API "contract" will be honoured.
 - This pre-release version of SlackReporter while being used by Radical Fraction (and is performing very well), until we reach version 1.0 it should probably only used for smaller controlled beta tests.
 
+
