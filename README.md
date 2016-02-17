@@ -10,7 +10,7 @@ A simple iOS framework allowing beta-test users to provide feedback using Slack.
 ## Installation
 To run the example project, clone the repo, navigate to the Example directory at the command line and run `pod install`
 
-If you prefer to simply copy the source code to your app, use the Finder to grab the files in the subdirectory Pod/Classes and drop all of them in your XCode project. 
+If you prefer to simply copy the source code to your app, use the Finder to grab the files in the subdirectory Pod/Classes and drop all of them in your Xcode project. 
 
 SlackReporter is available through [CocoaPods](http://cocoapods.org). To install
 it via CocoaPods, add the following line to your Podfile:
