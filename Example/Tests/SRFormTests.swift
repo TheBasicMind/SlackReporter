@@ -28,16 +28,16 @@ class SRFormTests: XCTestCase
     class func elements()->[SRFormElement]
     {
         return [
-            SRFormElement.init(identifier: "id", title: "title0", type: .Email,         feedbackValues: ["val1","val2","val3"], rememberResult: true),
-            SRFormElement.init(identifier: "id", title: "title1", type: .Email,         feedbackValues: ["val1","val2","val3"], rememberResult: true),
-            SRFormElement.init(identifier: "id", title: "title2", type: .Email,         feedbackValues: ["val1","val2","val3"], rememberResult: true)
+            SRFormElement(identifier: "id", title: "title0", type: .Email,         feedbackValues: ["val1","val2","val3"], rememberResult: true),
+            SRFormElement(identifier: "id", title: "title1", type: .Email,         feedbackValues: ["val1","val2","val3"], rememberResult: true),
+            SRFormElement(identifier: "id", title: "title2", type: .Email,         feedbackValues: ["val1","val2","val3"], rememberResult: true)
         ]
     }
     
     
     class func section()->SRFormSection
     {
-        return SRFormSection.init(title: "title", elements: elements(), footerText: "Footer text")
+        return SRFormSection(title: "title", elements: elements(), footerText: "Footer text")
     }
     
     
@@ -50,7 +50,7 @@ class SRFormTests: XCTestCase
     
     func testFormElementInit()
     {
-        let formElement = SRFormElement.init(identifier: "id", title: "title", type: .Email, feedbackValues: ["val1","val2","val3"], rememberResult: true)
+        let formElement = SRFormElement(identifier: "id", title: "title", type: .Email, feedbackValues: ["val1","val2","val3"], rememberResult: true)
         XCTAssertTrue(
             formElement.identifier == "id" &&
                 formElement.title == "title" &&
@@ -89,7 +89,7 @@ class SRFormTests: XCTestCase
         ///
         /// Process
         
-        let form = SRForm.init(title: nil, sections: nil, systemFeedbackElements: nil)
+        let form = SRForm(title: nil, sections: nil, systemFeedbackElements: nil)
         
         //////////
         //////////

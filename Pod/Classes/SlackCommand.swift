@@ -202,13 +202,13 @@ public class SlackCommand
         }
                 
         // URL of the endpoint we're going to contact.
-        guard let myURL = NSURL.init(string:"\(baseSlackURLWebAPI)api/\(command.rawValue)") else
+        guard let myURL = NSURL(string:"\(baseSlackURLWebAPI)api/\(command.rawValue)") else
         {
             throw SRError.InvalidURLComponent
         }
         
         // Create a POST request with our JSON as a request body.
-        request = NSMutableURLRequest.init(URL: myURL)
+        request = NSMutableURLRequest(URL: myURL)
         request.HTTPMethod = "POST";
         request.setValue(contentType, forHTTPHeaderField:"Content-Type")
         request.HTTPBody = data
@@ -363,13 +363,13 @@ public class SlackWebhook: SlackCommand
         
         // URL of the endpoint we're going to contact.
         
-        guard let myURL = NSURL.init(string:"\(baseSlackURLWebhook)services/\(hookID)") else
+        guard let myURL = NSURL(string:"\(baseSlackURLWebhook)services/\(hookID)") else
         {
             throw SRError.InvalidURLComponent
         }
         
         // Create a POST request with our JSON as a request body.
-        request = NSMutableURLRequest.init(URL: myURL)
+        request = NSMutableURLRequest(URL: myURL)
         request.HTTPMethod = "POST";
         request.setValue(jsonContentType, forHTTPHeaderField:"Content-Type")
         request.HTTPBody = data

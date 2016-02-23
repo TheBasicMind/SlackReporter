@@ -211,7 +211,7 @@ public class SRTableViewCell: UITableViewCell, SRFeedbackReceptical
         //// Title label
         
         if formElement.title != "" {
-            let aTitleLabel                 = UILabel.init(frame: CGRectZero)
+            let aTitleLabel                 = UILabel(frame: CGRectZero)
             aTitleLabel.text                = formElement.title
             aTitleLabel.font                = font
             aTitleLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -226,7 +226,7 @@ public class SRTableViewCell: UITableViewCell, SRFeedbackReceptical
         var aFeedbackView: UIView
         switch formElement.feedbackType {
         case .Email:
-            aFeedbackView                           = UITextField.init(frame: CGRectZero)
+            aFeedbackView                           = UITextField(frame: CGRectZero)
             let aTextField = aFeedbackView as! UITextField
             aFeedbackView.translatesAutoresizingMaskIntoConstraints = false
             aTextField.delegate = elementDelegate
@@ -237,20 +237,20 @@ public class SRTableViewCell: UITableViewCell, SRFeedbackReceptical
             aTextField.textColor                    = UIColor.grayColor()
             contentView.addSubview(aFeedbackView)
         case .MultilineText:
-            aFeedbackView                           = UITextView.init(frame: CGRectZero)
+            aFeedbackView                           = UITextView(frame: CGRectZero)
             let aTextView = aFeedbackView as! UITextView
             aTextView.translatesAutoresizingMaskIntoConstraints = false
             aTextView.delegate                      = elementDelegate
             aTextView.font                          = font
             aTextView.textColor                     = UIColor.grayColor()
             contentView.addSubview(aFeedbackView)
-            let genConstraints                      = NSLayoutConstraint.constraintsWithVisualFormat("V:[feedback(120)]", options: NSLayoutFormatOptions.init(rawValue: 0), metrics: nil, views: ["feedback" : aFeedbackView])
+            let genConstraints                      = NSLayoutConstraint.constraintsWithVisualFormat("V:[feedback(120)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["feedback" : aFeedbackView])
             let aConstraint                         = genConstraints[0]
             aConstraint.priority                    = 900
             contentView.addConstraints([aConstraint])
             accessoryType                           = .None
         case .ListSelection:
-            aFeedbackView                           = UITextField.init(frame: CGRectZero)
+            aFeedbackView                           = UITextField(frame: CGRectZero)
             let aTextField                          = aFeedbackView as! UITextField
             aTextField.translatesAutoresizingMaskIntoConstraints = false
             aTextField.delegate                     = elementDelegate
@@ -262,7 +262,7 @@ public class SRTableViewCell: UITableViewCell, SRFeedbackReceptical
         case .SingleLineText:
             fallthrough
         default:
-            aFeedbackView                           = UITextField.init(frame: CGRectZero)
+            aFeedbackView                           = UITextField(frame: CGRectZero)
             aFeedbackView.translatesAutoresizingMaskIntoConstraints = false
             (aFeedbackView as! UITextField).delegate = elementDelegate
             (aFeedbackView as! UITextField).textColor = UIColor.grayColor()
@@ -282,20 +282,20 @@ public class SRTableViewCell: UITableViewCell, SRFeedbackReceptical
         if formElement.title != "" {
             views           = ["title": self.contentView.subviews[0], "feedback": self.contentView.subviews[1]]
             string          = "H:|-[title(120)]-[feedback]-|"
-            constraints     = NSLayoutConstraint.constraintsWithVisualFormat(string, options: NSLayoutFormatOptions.init(rawValue: 0), metrics: nil, views: views )
+            constraints     = NSLayoutConstraint.constraintsWithVisualFormat(string, options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: views )
             contentView.addConstraints(constraints)
             string          = "V:|-[title]-|"
-            constraints     = NSLayoutConstraint.constraintsWithVisualFormat(string, options: NSLayoutFormatOptions.init(rawValue: 0), metrics: nil, views: views )
+            constraints     = NSLayoutConstraint.constraintsWithVisualFormat(string, options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: views )
             contentView.addConstraints(constraints)
         } else {
             views           = ["feedback": self.contentView.subviews[0]]
             string          = "H:|-[feedback]-|"
-            constraints     = NSLayoutConstraint.constraintsWithVisualFormat(string, options: NSLayoutFormatOptions.init(rawValue: 0), metrics: nil, views: views )
+            constraints     = NSLayoutConstraint.constraintsWithVisualFormat(string, options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: views )
             contentView.addConstraints(constraints)
         }
         
         string = "V:|-[feedback]-|"
-        constraints = NSLayoutConstraint.constraintsWithVisualFormat(string, options: NSLayoutFormatOptions.init(rawValue: 0), metrics: nil, views: views )
+        constraints = NSLayoutConstraint.constraintsWithVisualFormat(string, options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: views )
         contentView.addConstraints(constraints)
     }
     
@@ -369,7 +369,7 @@ public class SRTableViewController: UITableViewController, SRFormController, UIT
         let userDefaults                    = NSUserDefaults.standardUserDefaults()
         navigationItem.hidesBackButton      = true
         let backButtonText                  = NSLocalizedString("Cancel", comment: "Cancel back button")
-        navigationItem.leftBarButtonItem    = UIBarButtonItem.init(title: backButtonText, style: .Plain, target: self, action: "cancelViewController:")
+        navigationItem.leftBarButtonItem    = UIBarButtonItem(title: backButtonText, style: .Plain, target: self, action: "cancelViewController:")
         
         for (s, section) in form.sections.enumerate() {
             for i in section.elements.indices {
@@ -797,7 +797,7 @@ public class SROptionTableViewController: UITableViewController
         } else {
             cellLabelString             = (option as! SRForm).title
             let form                    = option as! SRForm
-            let tableViewController     = SRTableViewController.init(style: .Grouped, form: form, reporterDelegate: self.reporterDelegate)
+            let tableViewController     = SRTableViewController(style: .Grouped, form: form, reporterDelegate: self.reporterDelegate)
             tableViewController.title   = form.title
             self.navigationController?.pushViewController(tableViewController, animated: true)
         }

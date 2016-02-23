@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<sp:VideoDetails genre="movies" id="5efd7ad364c50510VgnVCM1000000b43150a____" xmlns:sp="http://xbox.skyplayer.sky.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xbox.skyplayer.sky.com/ ../../../harness/schema/VideoDetails.xsd">
+
+	<Title>The Wedding Ringer</Title>
+
+		<Image>http://www.asset1.net/tv/pictures/450/250/movie/the-wedding-ringer-2014/weddingringer-DI-1.jpg</Image>
+
+	
+			<BroadcastChannel>
+			<Name>Sky Movies</Name>
+		</BroadcastChannel>
+	
+	<DownloadWindows>
+									<Type>catchup</Type>
+						</DownloadWindows>
+
+	<DownloadInfo>
+	                        <Downloadable>Y</Downloadable>
+            <DownloadAssets>
+                                    <DownloadAsset bitRate="32000" fileSize="122914024" />
+                                    <DownloadAsset bitRate="64000" fileSize="134300996" />
+                                    <DownloadAsset bitRate="125000" fileSize="234565908" />
+                                    <DownloadAsset bitRate="175000" fileSize="264978292" />
+                                    <DownloadAsset bitRate="250000" fileSize="337190408" />
+                                    <DownloadAsset bitRate="450000" fileSize="474069824" />
+                                    <DownloadAsset bitRate="650000" fileSize="626130616" />
+                                    <DownloadAsset bitRate="950000" fileSize="778194040" />
+                                    <DownloadAsset bitRate="1450000" fileSize="1234377356" />
+                            </DownloadAssets>
+            <DownloadViewingRules>
+                                    <DownloadViewingRule licenceType="standard" hoursLicenceDuration="720" hoursToView="48" />
+                            </DownloadViewingRules>
+            </DownloadInfo>
+
+	<Synopsis>Social misfit Doug Harris (Josh Gad) is about to tie the knot... but needs a best man and seven groomsmen to convince his future wife (Kaley Cuoco-Sweeting) and her snobbish family he&apos;s no sad Billy No-Mates. In desperation, he turns to matrimonial Mr Fix-it Jimmy Callahan (Kevin Hart), the go-to guy when you haven&apos;t got enough buddies to pad out the wedding party. Ribald, bromantic fun that picks up where The Hangover left off.</Synopsis>
+
+	<AvailableActions>
+	
+		
+			<AvailableAction actionType="login" 	enabled="true">
+				<ActionText>Sign In</ActionText>
+							<TrackingData>
+				    </TrackingData>
+					<ActionData>
+							<ActionDataItem name="message" type="string">Sign in to see if you can watch this programme</ActionDataItem>					</ActionData>
+			</AvailableAction>
+
+		
+
+		
+  </AvailableActions>
+
+
+	
+		
+	<Details>
+		<Metadata>
+
+				<MetadataItem name="Directors" type="string">Jeremy Garelick</MetadataItem>
+				<MetadataItem name="Starring" type="string">Kevin Hart, Josh Gad, Affion Crockett, Kaley Cuoco-Sweeting, Mimi Rogers, Ken Howard, Clorish Leachman</MetadataItem>
+										<MetadataItem name="Certificate" type="String">15</MetadataItem>
+										<MetadataItem name="Release Date" type="String">2015</MetadataItem>
+	
+								</Metadata>
+	</Details>
+
+	<AdditionalInfo>
+		<Metadata>
+
+						<MetadataItem name="Duration" type="String">97 Mins</MetadataItem>
+					
+						<MetadataItem name="Parental Guidance" type="String">Flashing images, strong language</MetadataItem>
+										<MetadataItem name="Categories" type="String">Comedy</MetadataItem>
+								
+		</Metadata>
+ 	 </AdditionalInfo>
+
+	
+				<ExpiryDate>1609459199000</ExpiryDate>
+	
+		<TrackingData>
+				    </TrackingData>
+
+</sp:VideoDetails>

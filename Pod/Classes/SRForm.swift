@@ -95,7 +95,7 @@ public class SRFormElement: NSObject, NSCoding
     {
         let identifier = aDecoder.decodeObjectForKey("identifier") as! String
         let title = aDecoder.decodeObjectForKey("title") as! String
-        let feedbackType = SRFeedbackType.init(rawValue: aDecoder.decodeIntegerForKey("feedbackType") )!
+        let feedbackType = SRFeedbackType(rawValue: aDecoder.decodeIntegerForKey("feedbackType") )!
         let feedbackValues:[String] = aDecoder.decodeObjectForKey("feedbackValues") as! [String]
         let rememberResult = aDecoder.decodeBoolForKey("rememberResult")
         
@@ -234,8 +234,8 @@ public class SRForm: NSObject, NSCoding
         let email               = NSLocalizedString("Email", comment:"Label given to Email field")
         
         let defaultSection1Elements = [
-            SRFormElement.init(identifier: name, title: name, type: .SingleLineText, feedbackValues: [], rememberResult: true),
-            SRFormElement.init(identifier: email, title: email, type: .Email, feedbackValues: [], rememberResult: true),
+            SRFormElement(identifier: name, title: name, type: .SingleLineText, feedbackValues: [], rememberResult: true),
+            SRFormElement(identifier: email, title: email, type: .Email, feedbackValues: [], rememberResult: true),
         ]
         
         let remember            = NSLocalizedString("You only need to provide these details once. We will remember them from now on.", comment:"Subsection comment given to your details form element group")
@@ -248,14 +248,14 @@ public class SRForm: NSObject, NSCoding
         let readinessOption3    = NSLocalizedString("Not even a beta", comment: "readiness form feedback option 3")
         
         let defaultSection2Element = [
-            SRFormElement.init( identifier:     readinessTitle,
+            SRFormElement( identifier:     readinessTitle,
                                 title:          readinessTitle,
                                 type:           .ListSelection,
                                 feedbackValues: [readinessOption1,readinessOption2,readinessOption3],
                                 rememberResult: false)]
         
         let defaultSection3Elements = [
-            SRFormElement.init(identifier: feedback, title: "", type: .MultilineText, feedbackValues: [], rememberResult: false)]
+            SRFormElement(identifier: feedback, title: "", type: .MultilineText, feedbackValues: [], rememberResult: false)]
         
         let appName: String = ", " + ((NSBundle.mainBundle().objectForInfoDictionaryKey("CFBundleName") as? String) ?? "")
         
@@ -263,9 +263,9 @@ public class SRForm: NSObject, NSCoding
         let tellUs          = NSLocalizedString("Tell us what you think of this app\(appName)", comment:"Subsection comment for Feedback form element group")
         
         let ourSections:[SRFormSection] = [
-            SRFormSection.init(title: details, elements: defaultSection1Elements, footerText: remember),
-            SRFormSection.init(title: "", elements: defaultSection2Element, footerText: ourReadiness),
-            SRFormSection.init(title: feedback, elements: defaultSection3Elements, footerText: tellUs)
+            SRFormSection(title: details, elements: defaultSection1Elements, footerText: remember),
+            SRFormSection(title: "", elements: defaultSection2Element, footerText: ourReadiness),
+            SRFormSection(title: feedback, elements: defaultSection3Elements, footerText: tellUs)
         ]
         
         return ourSections
@@ -288,8 +288,8 @@ public class SRForm: NSObject, NSCoding
         let email               = NSLocalizedString("Email", comment:"Label given to Email field")
         
         let section1Elements = [
-            SRFormElement.init(identifier: name, title: name, type: .SingleLineText, feedbackValues: [], rememberResult: true),
-            SRFormElement.init(identifier: email, title: email, type: .Email, feedbackValues: [], rememberResult: true),
+            SRFormElement(identifier: name, title: name, type: .SingleLineText, feedbackValues: [], rememberResult: true),
+            SRFormElement(identifier: email, title: email, type: .Email, feedbackValues: [], rememberResult: true),
         ]
         
         let section1Footer      = NSLocalizedString("You only need to provide these details once. We will remember them from now on.", comment:"Form subsection comment")
@@ -306,12 +306,12 @@ public class SRForm: NSObject, NSCoding
         let pt2                 = NSLocalizedString("New feature suggestion", comment: "Form option")
         
         let section2Elements = [
-            SRFormElement.init( identifier:     title,
+            SRFormElement( identifier:     title,
                                 title:          title,
                                 type:           .SingleLineText,
                                 feedbackValues: [],
                                 rememberResult: false),
-            SRFormElement.init( identifier:     problemType,
+            SRFormElement( identifier:     problemType,
                                 title:          problemType,
                                 type:           .ListSelection,
                                 feedbackValues: [pt1,pt2],
@@ -325,15 +325,15 @@ public class SRForm: NSObject, NSCoding
         let section3Header          = NSLocalizedString("Description", comment:"Section header")
         
         let section3Elements = [
-            SRFormElement.init(identifier: section3Header, title: "", type: .MultilineText, feedbackValues: [], rememberResult: false)
+            SRFormElement(identifier: section3Header, title: "", type: .MultilineText, feedbackValues: [], rememberResult: false)
         ]
         
         let section3Footer          = NSLocalizedString("Please describe the improvement/suggestion.", comment:"Form section footer")
         
         let ourSections:[SRFormSection] = [
-            SRFormSection.init(title: section1Header, elements: section1Elements, footerText: section1Footer),
-            SRFormSection.init(title: section2Header, elements: section2Elements, footerText: nil),
-            SRFormSection.init(title: section3Header, elements: section3Elements, footerText: section3Footer)
+            SRFormSection(title: section1Header, elements: section1Elements, footerText: section1Footer),
+            SRFormSection(title: section2Header, elements: section2Elements, footerText: nil),
+            SRFormSection(title: section3Header, elements: section3Elements, footerText: section3Footer)
         ]
         
         return ourSections
@@ -355,8 +355,8 @@ public class SRForm: NSObject, NSCoding
         let email               = NSLocalizedString("Email", comment:"Label given to Email field")
         
         let section1Elements = [
-            SRFormElement.init(identifier: name, title: name, type: .SingleLineText, feedbackValues: [], rememberResult: true),
-            SRFormElement.init(identifier: email, title: email, type: .Email, feedbackValues: [], rememberResult: true),
+            SRFormElement(identifier: name, title: name, type: .SingleLineText, feedbackValues: [], rememberResult: true),
+            SRFormElement(identifier: email, title: email, type: .Email, feedbackValues: [], rememberResult: true),
         ]
         
         let section1Footer      = NSLocalizedString("You only need to provide these details once. We will remember them from now on.", comment:"Form subsection comment")
@@ -385,17 +385,17 @@ public class SRForm: NSObject, NSCoding
         let r6                  = NSLocalizedString("Shucks, I haven't tried to reproduce it", comment: "Form option")
         
         let section2Elements = [
-            SRFormElement.init( identifier: issueTitle,
+            SRFormElement( identifier: issueTitle,
                                 title: issueTitle,
                                 type: .SingleLineText,
                                 feedbackValues: [],
                                 rememberResult: false),
-            SRFormElement.init( identifier:     problemType,
+            SRFormElement( identifier:     problemType,
                                 title:          problemType,
                                 type:           .ListSelection,
                                 feedbackValues: [pt1,pt2,pt3,pt4],
                                 rememberResult: false),
-            SRFormElement.init( identifier:     reproducibility,
+            SRFormElement( identifier:     reproducibility,
                                 title:          reproducibility,
                                 type:           .ListSelection,
                                 feedbackValues: [r1,r2,r3,r4,r5,r6],
@@ -412,7 +412,7 @@ public class SRForm: NSObject, NSCoding
         let section3Header          = NSLocalizedString("Preconditions", comment:"ID given to Feedback field")
         
         let section3Elements = [
-            SRFormElement.init(identifier: section3Header, title: "", type: .MultilineText, feedbackValues: [], rememberResult: false)]
+            SRFormElement(identifier: section3Header, title: "", type: .MultilineText, feedbackValues: [], rememberResult: false)]
         
         let section3Footer          = NSLocalizedString("Please describe the steps you took leading up to the issue.", comment:"Form section footer")
         
@@ -433,17 +433,17 @@ public class SRForm: NSObject, NSCoding
         let descriptionField        = NSLocalizedString("Problem Description", comment:"Field title")
         
         let section4Elements = [
-            SRFormElement.init(identifier: resultField, title: resultField, type: .ListSelection, feedbackValues: [rf1,rf2,rf3,rf4,rf5], rememberResult: false),
-            SRFormElement.init(identifier: descriptionField, title: "", type: .MultilineText, feedbackValues: [], rememberResult: false)
+            SRFormElement(identifier: resultField, title: resultField, type: .ListSelection, feedbackValues: [rf1,rf2,rf3,rf4,rf5], rememberResult: false),
+            SRFormElement(identifier: descriptionField, title: "", type: .MultilineText, feedbackValues: [], rememberResult: false)
         ]
         
         let section4Footer          = NSLocalizedString("Please describe the problem and the result.", comment:"Form section footer")
         
         let ourSections:[SRFormSection] = [
-            SRFormSection.init(title: section1Header, elements: section1Elements, footerText: section1Footer),
-            SRFormSection.init(title: section2Header, elements: section2Elements, footerText: section2Footer),
-            SRFormSection.init(title: section3Header, elements: section3Elements, footerText: section3Footer),
-            SRFormSection.init(title: section4Header, elements: section4Elements, footerText: section4Footer)
+            SRFormSection(title: section1Header, elements: section1Elements, footerText: section1Footer),
+            SRFormSection(title: section2Header, elements: section2Elements, footerText: section2Footer),
+            SRFormSection(title: section3Header, elements: section3Elements, footerText: section3Footer),
+            SRFormSection(title: section4Header, elements: section4Elements, footerText: section4Footer)
         ]
         
         return ourSections
@@ -463,20 +463,20 @@ public class SRForm: NSObject, NSCoding
      Create your own custom form as follows:
      
      ```
-     let elmnt1 = SRFormElement.init(title:          "Email",
+     let elmnt1 = SRFormElement(title:          "Email",
      type:           .Email,
      feedbackValues: nil,
      rememberResult: true)
-     let elmnt2 = SRFormElement.init(title:          "Feedback",
+     let elmnt2 = SRFormElement(title:          "Feedback",
      type:           .MultilineText
      feedbackValues: nil
      rememberResult: false)
      
-     let sctnA = SRFormSection.init(title:    "A Section Title",
+     let sctnA = SRFormSection(title:    "A Section Title",
      elements: [elmnt1, elmnt2],
      footer:   "Descriptive text in the section footer")
      
-     let form = SRForm.init(title:"My SLForm", sections:[sctnA])
+     let form = SRForm(title:"My SLForm", sections:[sctnA])
      ```
      - parameter title: the title of the form. May be nil 
      in which case a default title is given. If you want the title

@@ -212,7 +212,7 @@ public class SlackReporter: NSObject, SRInternalDelegate
     */
     static public func reporterBarButtonItemWithForm(forms:[SRForm]?)->UIBarButtonItem
     {
-        let barButton = SRBarButtonItem.init(   nil,
+        let barButton = SRBarButtonItem(   nil,
                                                 image:                  SlackReporterStyleKit.imageOfSlackReporterBarButtonIcon(),
                                                 landscapeImagePhone:    SlackReporterStyleKit.imageOfSlackReporterBarButtonIcon(),
                                                 target:                 self,
@@ -227,8 +227,8 @@ public class SlackReporter: NSObject, SRInternalDelegate
     */
     static public func reporterButtonItem(forms:[SRForm]?)throws ->UIButton
     {
-        //let button = SRButton.init(forms: forms, target: self, action:"displaySlackReporterForm:")
-        let button = SRButton.init(forms: nil)
+        //let button = SRButton(forms: forms, target: self, action:"displaySlackReporterForm:")
+        let button = SRButton(forms: nil)
         button.setImage(SlackReporterStyleKit.imageOfSlackReporterBarButtonIcon(), forState: .Normal)
         return button
     }
@@ -256,11 +256,11 @@ public class SlackReporter: NSObject, SRInternalDelegate
         let tableViewController: UITableViewController
         let cancelString                        = NSLocalizedString("Cancel", comment: "Cancel form bar button item label")
         let submitString                        = NSLocalizedString("Submit", comment: "Sumbmit form bar button item label")
-        let cancelButton                        = UIBarButtonItem.init(title: cancelString,
+        let cancelButton                        = UIBarButtonItem(title: cancelString,
             style: UIBarButtonItemStyle.Plain,
             target: self,
             action: "dispelFormsController:")
-        let submitButton = UIBarButtonItem.init(title: submitString,
+        let submitButton = UIBarButtonItem(title: submitString,
             style: UIBarButtonItemStyle.Plain,
             target: self,
             action: "submitForm:")
@@ -268,15 +268,15 @@ public class SlackReporter: NSObject, SRInternalDelegate
         switch myForms.count {
         case 1:
             // Presenting a single form
-            tableViewController = SRTableViewController.init(style: .Grouped, form: myForms[0], reporterDelegate: self)
+            tableViewController = SRTableViewController(style: .Grouped, form: myForms[0], reporterDelegate: self)
             break
         default:
             // Presenting a navigable set of forms
-            tableViewController = SROptionTableViewController.init(style: .Grouped, forms: myForms, reporterDelegate: self)
+            tableViewController = SROptionTableViewController(style: .Grouped, forms: myForms, reporterDelegate: self)
             break
         }
         tableViewController.title               = initialTitle
-        let navController                       = SRNavigationController.init(rootViewController: tableViewController, submitButton: submitButton)
+        let navController                       = SRNavigationController(rootViewController: tableViewController, submitButton: submitButton)
         navController.modalPresentationStyle    = .FormSheet
         
         tableViewController.navigationItem.leftBarButtonItem = cancelButton

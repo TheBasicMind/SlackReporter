@@ -1,0 +1,5 @@
+curl -H "Accept: application/xml" -H "Content-Type: application/xml" -X GET "http://goio.sky.com//vod/content/Home/Application_Navigation/Sky_Movies/Most_Popular/content/promoPage.do.xml"
+
+curl -H "Accept: application/xml" -H "Content-Type: application/xml" -X GET "http://goio.sky.com//vod/content/GOIOMOVIES/content/videoId/5efd7ad364c50510VgnVCM1000000b43150a________/content/videoDetailsPage.do.xml"
+
+
